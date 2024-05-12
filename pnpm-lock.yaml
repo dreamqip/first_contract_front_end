@@ -23,6 +23,9 @@ importers:
       '@tonconnect/ui-react':
         specifier: ^2.0.2
         version: 2.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@twa-dev/sdk':
+        specifier: ^7.0.0
+        version: 7.0.0(react@18.3.1)
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -508,6 +511,14 @@ packages:
 
   '@tonconnect/ui@2.0.2':
     resolution: {integrity: sha512-x/iI7yX8yMvs7HKZ1wm3Quz5yg8mJJwZQlg+DYHGBvqdx0JMqXbF8YOcvGdh/Lhmrq92ahE8QIwX+85cS80vjQ==}
+
+  '@twa-dev/sdk@7.0.0':
+    resolution: {integrity: sha512-OZvqGGrdrgE0xU/IGjvsGKKouia5bTu6rA/BOOU6pJYLu776nQJs/HNFl7lwW16RONf1vvPqeV8XximsuzZ9Iw==}
+    peerDependencies:
+      react: '>=16.0.0'
+
+  '@twa-dev/types@7.0.0':
+    resolution: {integrity: sha512-LBnMklxORuXd/ypv9gFKcQVNJkCktkeuU+2V6B5Ww7dcxDCoYBAKkNnIwEQ3cShq+cxTi96jC/CqWhgDMQ7AXQ==}
 
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
@@ -2091,6 +2102,13 @@ snapshots:
       ua-parser-js: 1.0.37
     transitivePeerDependencies:
       - encoding
+
+  '@twa-dev/sdk@7.0.0(react@18.3.1)':
+    dependencies:
+      '@twa-dev/types': 7.0.0
+      react: 18.3.1
+
+  '@twa-dev/types@7.0.0': {}
 
   '@types/babel__core@7.20.5':
     dependencies:
